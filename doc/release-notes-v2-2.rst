@@ -19,3 +19,7 @@ from Duktape v2.1.x.  Note the following:
   longer a resized monolithic allocation which improves memory behavior for
   very low memory targets.  If you're using a pool allocator, you may need to
   measure and adjust pool sizes/counts.
+
+* The bound 'this', bound arguments, and target of a duk_hboundfunc are no
+  longer internal properties (but duk_hboundfunc struct members) and are not
+  visible in the debug protocol.
