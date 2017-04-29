@@ -2195,6 +2195,10 @@ DUK_LOCAL void duk__debug_handle_get_heap_obj_info(duk_hthread *thr, duk_heap *h
 			}
 		}
 
+		if (DUK_HOBJECT_IS_BOUNDFUNC(h_obj)) {
+			/* FIXME */
+		}
+
 		if (DUK_HOBJECT_IS_THREAD(h_obj)) {
 			/* XXX: Currently no inspection of threads, e.g. value stack, call
 			 * stack, catch stack, etc.
