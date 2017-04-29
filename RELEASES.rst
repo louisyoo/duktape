@@ -2830,7 +2830,7 @@ Planned
 
 * Add an internal type for representing bound functions (duk_hboundfunc) and
   "collapse" bound function chains so that the target of a duk_hboundfunc is
-  always a non-bound function (GH-1503)
+  always a non-bound function (GH-1503, GH-1507)
 
 * Fix missing duk_require_stack() in bound function call handling which caused
   calls to bound functions with a lot of bound arguments to fail with a value
